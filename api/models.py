@@ -1,3 +1,4 @@
+from unittest.util import _MAX_LENGTH
 from django.db import models
 
 # Create your models here.
@@ -13,3 +14,5 @@ class usuario(models.Model):
     def __str__(self):
         retorno = "{0} - {1} - {2}".format(self.id, self.username, self.email)
         return retorno
+
+
